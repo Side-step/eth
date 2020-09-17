@@ -1,4 +1,4 @@
-	
+
 
 <html lang="ko">
 <!-- Mirrored from etherplus.io/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 00:26:17 GMT -->
@@ -12,9 +12,9 @@
 <script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../www.gstatic.com/charts/loader.js"></script>
 
-<!--°øÅë css-->
-<link rel="stylesheet" href="css/default.css">	
-<!--°øÅë css-->
+<!--ï¿½ï¿½ï¿½ï¿½ css-->
+<link rel="stylesheet" href="css/default.css">
+<!--ï¿½ï¿½ï¿½ï¿½ css-->
 
   <style>
     .tree{
@@ -56,19 +56,19 @@
     }
     .aline { border:1px solid; padding:10px;  background:#ff0000; }
     .bline { border:1px solid; padding:10px; background:#0000ff; }
-    
+
     .box1 {
      width:100%;
-    float:left; width:300px; height:100px; background-color:#ff0000; 
+    float:left; width:300px; height:100px; background-color:#ff0000;
     margin-left: auto; margin-right: auto; padding: 5px; text-align: center; line-height: 100px; vertical-align:middle; color:white;}
    .box2 {
     width:100%;
     display:inline-block; width:300px; height:100px; background-color:#0000ff;
-     margin-left:10px; margin-left: auto; margin-right: auto; padding: 5px; text-align: center; line-height: 100px; vertical-align:middle; color:white;}  
+     margin-left:10px; margin-left: auto; margin-right: auto; padding: 5px; text-align: center; line-height: 100px; vertical-align:middle; color:white;}
 
 
   </style>
-  
+
 
 </head>
 <body>
@@ -107,15 +107,15 @@ a.logomobile{display:block;width:247px;height:100px;background: url(images/mlogo
 
 <script>
 google.charts.load('current', {'packages':['bar','corechart']});
- 
+
     function schedulerSuccessAndFailChart() {
         var data = google.visualization.arrayToDataTable([
                ["Title","Total Income", {role:'annotation'}, "Income Limit", {role:'annotation'}],
                         [""
-                ,,  //¼º°øµ¥ÀÌÅÍ
-                ,, ] //½ÇÆÐµ¥ÀÌÅÍ
+                ,,  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                ,, ] //ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
        ]);
- 
+
        var barChartOption = {
                title : 'Income Information',
                bars: 'vertical',
@@ -124,7 +124,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
                legend: { position: "top" },
                isStacked: false,
                tooltip:{textStyle : {fontSize:12}, showColorCode : true},
-               animation: { //Â÷Æ®°¡ »Ñ·ÁÁú¶§ ½ÇÇàµÉ ¾Ö´Ï¸ÞÀÌ¼Ç È¿°ú
+               animation: { //ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ñ·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ È¿ï¿½ï¿½
                  startup: true,
                  duration: 1000,
                  easing: 'linear' },
@@ -139,24 +139,24 @@ google.charts.load('current', {'packages':['bar','corechart']});
                    }
               }
         };
- 
+
        var chart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
- 
+
        chart.draw(data, barChartOption);
-       //¹ÝÀÀÇü ±×·¡ÇÁ Ãâ·Â - ¹ÝÀÀÇü ±×·¡ÇÁ¸¦ ¿øÇÏÁö ¾ÊÀ» ½Ã Á¦°ÅÇÏ°Å³ª ÁÖ¼®Ã³¸® ÇÏ¼¼¿ä.
+       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°Å³ï¿½ ï¿½Ö¼ï¿½Ã³ï¿½ï¿½ ï¿½Ï¼ï¿½ï¿½ï¿½.
        window.addEventListener('resize', function() { chart.draw(data, barChartOption); }, false);
     }
- 
+
     google.charts.setOnLoadCallback(schedulerSuccessAndFailChart);
- 
- 
- 
+
+
+
 </script>
 	<script type="text/javascript">
 		google.charts.load('current', {'packages':['corechart']});
 		google.charts.setOnLoadCallback(drawVisualization);
-	
-		function drawVisualization() { 
+
+		function drawVisualization() {
 			var data = google.visualization.arrayToDataTable([
 					['Type', 'Income'],
 					['Direct Referral  ETH',  ],
@@ -173,15 +173,15 @@ google.charts.load('current', {'packages':['bar','corechart']});
 
 					series: {5: {type: 'line'}}
 				};
-			
+
 			var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
 			chart.draw(data, options);
 		}
 	</script>
- 
- <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
  <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
- <script type="text/javascript"> 
+ <script type="text/javascript">
  google.charts.load('current', {'packages' : ['corechart']});
  google.charts.setOnLoadCallback(drawChart);
 
@@ -191,24 +191,24 @@ google.charts.load('current', {'packages':['bar','corechart']});
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Line');
     data.addColumn('number', 'Daily Count');
-    data.addRows( 
-			['A-Line',],['B-Line',]); 
+    data.addRows(
+			['A-Line',],['B-Line',]);
     var options = {'title' : 'Daily Line Information', 'width' :800, 'height' : 500};
     var chart = new google.visualization.PieChart(document.getElementById('line_chart_div'));
 
     chart.draw(data, options);
   }
- 
+
 </script>
- 
+
 
 
 <!-- Mirrored from etherplus.io/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 00:26:17 GMT -->
 </html>
 
-  
 
-<!--¸ÞÀÎ¿ë-->
+
+<!--ï¿½ï¿½ï¿½Î¿ï¿½-->
 
 <div class="bgbgwrap">
 	<div style="height:180px;"></div>
@@ -238,20 +238,20 @@ google.charts.load('current', {'packages':['bar','corechart']});
 		<p><span class="timepp1"></span><span class="gooboon">:</span><span class="timepp2"></span><span class="gooboon">:</span><span class="timepp3"></span></p>
 	</div>
 </div>
-<!--¸ÞÀÎ¿ë-->
+<!--ï¿½ï¿½ï¿½Î¿ï¿½-->
 <!--
 <div>
 	<div class="het630">
 		<h2>ETHER PLUS</h2>
 		<p>
 			Ever since I can remember. I was interested in moving pictures.<br>
-			Growing up. I realized I have an eye for beauty and<br> 
+			Growing up. I realized I have an eye for beauty and<br>
 			a mind full of stories to tell.<br>
 			I have been lucky to work on a variety of award-winning projects.<br>
 			spanning across fiction and documentary.<br>
-			They say a picture is worth a thousand words.<br> 
-			and I¡¯m proud to share the highlights of my work on this site.<br>
-			Please don¡¯t hesitate to get in touch if you¡¯d<br> 
+			They say a picture is worth a thousand words.<br>
+			and Iï¿½ï¿½m proud to share the highlights of my work on this site.<br>
+			Please donï¿½ï¿½t hesitate to get in touch if youï¿½ï¿½d<br>
 			like to discuss working together.
 		</p>
 	</div>
@@ -264,7 +264,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	<!-- <form action=""> -->
 	<div style="height:50px;"></div>
 	<div class="ethrelative">
-		<input type="text" value="0x30cA9a3A45919659478D35466b8FDaD1F704768e" name="" class="ethinput" >
+		<input type="text" value="0x7eE69B66CA5495c87C0FDdf02394a208F004DB8E" name="" class="ethinput" >
 		<p><img src="images/qr878787.png" alt=""></p>
 	<div class="link_con">
 		<a href="javascript:;"><h2 class="content_join"><center><font color ="white">[Copy Contract Address]</font></center></a>
@@ -276,7 +276,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	<div style="height:75px;"></div>
 	<div class="button_zone">
 		<!-- <a href="javascript:;" class="resetleft">RESET</a> -->
-        <a href="javascript:;" class="joinright"> 
+        <a href="javascript:;" class="joinright">
         JOIN
     </a>
 	</div>
@@ -286,11 +286,11 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	THE ETHEREUM WALLET.<a href="javascript:;">READ MORE</a>
 	</p>
 	<div style="height:65px;"></div>
-	
+
 	<div class="link_qr">
 		<a href="javascript:;"></a>
 	</div>
-	
+
 
 
 	<!-- </form> -->
@@ -335,16 +335,16 @@ google.charts.load('current', {'packages':['bar','corechart']});
 <!---
   <div id="chart_div"></div>
   <div style="height:30px;"></div>
-  
+
   <div id="bar_chart_div"></div>
   <div style="height:30px;"></div>
---->  
-  <div style="height:10px;"></div>  
+--->
+  <div style="height:10px;"></div>
   <div class="box1">
-   ETH <br>A Line   </div>      
+   ETH <br>A Line   </div>
   <div class="box2">
    ETH <br>B Line   </div>
-  
+
 
 
 	<div style="height:50px;"></div>
@@ -363,19 +363,19 @@ google.charts.load('current', {'packages':['bar','corechart']});
 
 					<p class="right_title_p"></p>
 				</li>
-       	<li data-code='2'> 
+       	<li data-code='2'>
         	<p class="left_title_p">Sponsor Addr</p>
-        
+
  					<p class="right_title_p">
            <font color = 'red'>Unregistered User!!</font>           </p>
 				</li>
-        
+
 
 				<li data-code='3'>
 					<p class="left_title_p">300% Income Limit Remain</p>
 					<p class="right_title_p"><u><strong> ETH</strong></u></p>
 				</li>
-        
+
 				<li data-code='4'>
 					<p class="left_title_p">Direct Referral Income 5%</p>
           <a href = 'http://www.etherplus.io/table.php?own=&amp;type=1'>
@@ -388,12 +388,12 @@ google.charts.load('current', {'packages':['bar','corechart']});
 				</li>
 				<li data-code='6'>
 					<p class="left_title_p">Team Match Income</p>
-          <a href = 'http://www.etherplus.io/table.php?own=&amp;type=3'>             
+          <a href = 'http://www.etherplus.io/table.php?own=&amp;type=3'>
 					<p class="right_title_p"> ETH</p></a>
 				</li>
 				<li data-code='7'>
 					<p class="left_title_p">1st Match Income 100%</p>
-          <a href = 'http://www.etherplus.io/table.php?own=&amp;type=4'>             
+          <a href = 'http://www.etherplus.io/table.php?own=&amp;type=4'>
 					<p class="right_title_p"> ETH</p></a>
 				</li>
 				<li data-code='8'>
@@ -411,7 +411,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
           </p>
 				</li>
 			</ul>
-			
+
 			<div class="button_zone">
 			<!-- <a href="javascript:;" class="resetleft">RESET</a> -->
 		<a href="withdraw784e.html?own=&amp;balance=0" class="joinright">WITHDRAW</a>
@@ -425,7 +425,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	<!---
 	<div id="showed">
 		<div style="height:90px;"></div>
-		<a href="javascript:;" class="closebtx"><img src="./images/close4343.jpg" alt=""></a>	
+		<a href="javascript:;" class="closebtx"><img src="./images/close4343.jpg" alt=""></a>
 		<div style="height:40px;"></div>
 		<p class="totaldeposit">Total deposit : 10 eth</p>
 		<p class="totalincentive">Total Incentive : 1 eth</p>
@@ -457,14 +457,14 @@ google.charts.load('current', {'packages':['bar','corechart']});
 			<tbody>
 			  <tr>
 				<td class="tg-0pky">2020-08-31 11:16</td>
-				<td class="tg-0pky">0x232¡¦23</td>
+				<td class="tg-0pky">0x232ï¿½ï¿½23</td>
 				<td class="tg-0pky">Roll_up</td>
 				<td class="tg-0pky">1 eth</td>
 				<td class="tg-0pky">0.01 eth</td>
 			  </tr>
 			   <tr>
 				<td class="tg-0pky">2020-08-31 11:16</td>
-				<td class="tg-0pky">0x232¡¦23</td>
+				<td class="tg-0pky">0x232ï¿½ï¿½23</td>
 				<td class="tg-0pky">Roll_up</td>
 				<td class="tg-0pky">1 eth</td>
 				<td class="tg-0pky">0.01 eth</td>
@@ -474,7 +474,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 		</div>
 		<div style="height:50px;"></div>
 		<div class="sum_price">
-			<p class="sum_price_p1">ÇöÀçÃâ±Ý°¡´ÉÀÜ¾×</p>
+			<p class="sum_price_p1">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý°ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½</p>
 			<p class="sum_price_p2">-ETH</p>
 		</div>
 	</div>
@@ -482,10 +482,10 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	--->
 
 
-	
+
 	<div id="showed1">
 		<div style="height:90px;"></div>
-		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>	
+		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>
 		<div style="height:40px;"></div>
 		<div style="height:20px;"></div>
 		<style type="text/css">
@@ -510,20 +510,20 @@ google.charts.load('current', {'packages':['bar','corechart']});
 			  </tr>
 			</thead>
 			<tbody>
-			
+
  	  		<p class="totaldeposit">Total deposit :  0 ETH</p>
 			<p class="totalincentive">Total Direct Referral : 0 </p>
 
-			 
+
 			</tbody>
 			</table>
-     
+
 	</div>
- 
- 
+
+
 	<div id="showed2">
 		<div style="height:90px;"></div>
-		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>	
+		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>
 		<style type="text/css">
 		.tg  {border-collapse:collapse;border-spacing:0;border-top:1px solid #fff;border-bottom:1px solid #fff;
 		width:674px;margin:0 auto;height:100px;}
@@ -546,26 +546,26 @@ google.charts.load('current', {'packages':['bar','corechart']});
 				<th class="tg-0pky">A-Line.No</th>
 				<th class="tg-0pky">Address</th>
 				<th class="tg-0pky">Deposit</th>
-       
-     
+
+
 				<th class="tg-0pky">B-Line.No</th>
 				<th class="tg-0pky">Address</th>
 				<th class="tg-0pky">Deposit</th>
-   
+
 			  </tr>
 			</thead>
 
-       
-      
+
+
       </table>
 		</div>
-     
+
 	</div>
-    
-    
+
+
  <div id="showed3">
 		<div style="height:90px;"></div>
-		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>	
+		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>
 		<style type="text/css">
 		.tg  {border-collapse:collapse;border-spacing:0;border-top:1px solid #fff;border-bottom:1px solid #fff;
 		width:674px;margin:0 auto;height:100px;}
@@ -587,29 +587,29 @@ google.charts.load('current', {'packages':['bar','corechart']});
 			  <tr>
 				<th class="tg-0pky">A-Line.No</th>
 				<th class="tg-0pky">Deposit</th>
-       
-     
+
+
 				<th class="tg-0pky">A-Line.no</th>
 				<th class="tg-0pky">Deposit</th>
-   
+
 			  </tr>
 			</thead>
 
   			<tbody>
-  			  
-   	 
+
+
   			</tbody>
-      
+
       </table>
 		</div>
-     
+
 	</div>
- 
- 
- 
+
+
+
  <div id="showed4">
 		<div style="height:90px;"></div>
-		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>	
+		<a href="javascript:;" class="closebtx"><img src="images/close4343.jpg" alt=""></a>
 		<style type="text/css">
 		.tg  {border-collapse:collapse;border-spacing:0;border-top:1px solid #fff;border-bottom:1px solid #fff;
 		width:674px;margin:0 auto;height:100px;}
@@ -631,25 +631,25 @@ google.charts.load('current', {'packages':['bar','corechart']});
 			  <tr>
 				<th class="tg-0pky">B-Line.No</th>
 				<th class="tg-0pky">Deposit</th>
-       
-     
+
+
 				<th class="tg-0pky">B-Line.no</th>
 				<th class="tg-0pky">Deposit</th>
-   
+
 			  </tr>
 			</thead>
 
   			<tbody>
-  			  
-   	 
+
+
   			</tbody>
-      
+
       </table>
 		</div>
-     
+
 	</div>
-  
- 
+
+
 	<div style="height:50px;"></div>
 
 
@@ -678,7 +678,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 
 
 	<div style="height:50px;"></div>
-	
+
 	<div class="smart_wrap">
 		<div style="height:70px;"></div>
 		<div class="smart">
@@ -703,15 +703,15 @@ google.charts.load('current', {'packages':['bar','corechart']});
  				<li data-code='4'>
 					<p class="left_title_p">B-Line Numbers of Partners</p>
 					<p class="right_title_p">0</p>
-				</li>       
+				</li>
 				<li data-code='5'>
 
 					<p class="left_title_p">Total Numbers of Partners</p>
           <a href = 'http://www.etherplus.io/tree.php?own=&amp;type=1'>
 
 					<p class="right_title_p">0(0,0)</p></a>
-				</li>        
- 
+				</li>
+
 <!---				<li data-code='6'>
 					<p class="left_title_p">Total Community Participants</p>
 					<p class="right_title_p">0 ETH</p>
@@ -720,7 +720,7 @@ google.charts.load('current', {'packages':['bar','corechart']});
 		</div>
 		<div style="height:70px;"></div>
 	</div>
-	
+
 	<script>
 		$(".tablepop_ul li").click(function(){
 			var thisdata = $(this).data('code');
@@ -736,9 +736,9 @@ google.charts.load('current', {'packages':['bar','corechart']});
 			}
 			})
 			*/
-		
+
 		})
-		
+
 		function copyToClipboard(val) {
 		  var t = document.createElement("textarea");
 		  document.body.appendChild(t);
@@ -750,30 +750,30 @@ google.charts.load('current', {'packages':['bar','corechart']});
 		$('.tablepop_uls li:eq(0)').click(function() {
        		});
 
-		
-		$('.link_qr a').click(function() { /* referral link Å¬¸¯½Ã */
+
+		$('.link_qr a').click(function() { /* referral link Å¬ï¿½ï¿½ï¿½ï¿½ */
        		});
 
 		$('.link_con a').click(function() {
-		  copyToClipboard('0x30cA9a3A45919659478D35466b8FDaD1F704768e');
+		  copyToClipboard('0x7eE69B66CA5495c87C0FDdf02394a208F004DB8E');
 		  alert('Copied contract adress.');
 		});
 
 		$('.tablepop_uls li:eq(1)').click(function() {
 		   $("#showed1").show();
 		});
-	
+
 		$('.tablepop_uls li:eq(2)').click(function() {
 		   $("#showed3").show();
 		});
-  
+
  		$('.tablepop_uls li:eq(3)').click(function() {
 		   $("#showed4").show();
 		});
-   
+
 		$('.tablepop_uls li:eq(4)').click(function() {
 		   $("#showed5").show();
-		}); 
+		});
 
 		$(".closebtx").on('click',function(){
 			$("#showed").hide();
@@ -795,12 +795,12 @@ google.charts.load('current', {'packages':['bar','corechart']});
 	</p>
 </div>
 
-	
+
 	<div style="height:130px;" id="link_2"></div>
-	
- 
- 
-<!--	
+
+
+
+<!--
 	<div class="guidance_tong">
 		<span><img src="./images/png114114_logo.png" alt=""></span>
 		<div style="height:35px;"></div>
@@ -822,16 +822,16 @@ google.charts.load('current', {'packages':['bar','corechart']});
 
 
 <script>
-	
+
 	$(".main_menu>li>a").click(function(){
 		var indd = $(this).parent("li").index();
-	
+
 		if(indd==3){
 			var offset = $("#link_2").offset();
 			$('html, body').animate({scrollTop : offset.top}, 400);
 		}
 	})
-	
+
 </script>
 
 
@@ -847,9 +847,9 @@ google.charts.load('current', {'packages':['bar','corechart']});
 </div>
 <!--footer-->
 
-<!--°øÅë js-->
+<!--ï¿½ï¿½ï¿½ï¿½ js-->
 <script src="js/main.js"></script>
-<!--°øÅë js-->
+<!--ï¿½ï¿½ï¿½ï¿½ js-->
 
 </body>
 </html>
